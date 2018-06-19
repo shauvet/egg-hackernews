@@ -1,5 +1,14 @@
 {
   "keys": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/config/config.default.js",
+  "view": {
+    "defaultViewEngine": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/config/config.default.js",
+    "defaultExtension": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/config/config.default.js",
+    "mapping": {
+      ".tpl": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/config/config.default.js"
+    },
+    "root": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view/config/config.local.js"
+  },
   "middleware": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/config/config.default.js",
   "session": {
     "maxAge": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-session/config/config.default.js",
@@ -26,7 +35,7 @@
       "value": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-security/config/config.default.js",
+      "enable": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-security/config/config.local.js",
       "maxAge": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-security/config/config.default.js",
       "includeSubdomains": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-security/config/config.default.js"
     },
@@ -80,7 +89,7 @@
     "cookieMaxAge": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-watcher/config/config.default.js",
+    "type": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-watcher/config/config.local.js",
     "eventSources": {
       "default": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-watcher/config/config.default.js",
       "development": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-watcher/config/config.default.js"
@@ -96,6 +105,13 @@
     "files": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-multipart/config/config.default.js",
     "fileExtensions": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-multipart/config/config.default.js",
     "whitelist": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-multipart/config/config.default.js"
+  },
+  "development": {
+    "watchDirs": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-development/config/config.default.js"
   },
   "customLogger": {
     "scheduleLogger": {
@@ -117,16 +133,15 @@
     "dir": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-static/config/config.default.js",
     "dynamic": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-static/config/config.default.js",
     "preload": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-static/config/config.default.js",
-    "buffer": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-static/config/config.prod.js",
-    "maxFiles": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-static/config/config.default.js",
-    "maxAge": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-static/config/config.prod.js"
+    "buffer": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-static/config/config.default.js"
   },
-  "view": {
-    "root": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view/config/config.default.js",
-    "cache": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view/config/config.default.js",
-    "defaultExtension": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view/config/config.default.js",
-    "defaultViewEngine": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view/config/config.default.js",
-    "mapping": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view/config/config.default.js"
+  "nunjucks": {
+    "autoescape": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view-nunjucks/config/config.default.js",
+    "throwOnUndefined": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view-nunjucks/config/config.default.js",
+    "trimBlocks": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view-nunjucks/config/config.default.js",
+    "lstripBlocks": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view-nunjucks/config/config.default.js",
+    "cache": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg-view-nunjucks/config/config.local.js"
   },
   "env": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js",
   "name": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js",
@@ -141,7 +156,9 @@
     "private": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js",
     "dependencies": {
       "egg": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js",
-      "egg-scripts": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js"
+      "egg-scripts": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js",
+      "egg-view-xtpl": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
       "autod": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js",
@@ -222,7 +239,9 @@
     "coreLogName": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js",
     "agentLogName": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js",
     "errorLogName": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js",
-    "coreLogger": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.local.js"
+    },
     "allowDebugAtProd": "/Users/xiaowei/Desktop/workspace/nodejs/egg-hackernews/node_modules/egg/config/config.default.js"
   },
   "httpclient": {

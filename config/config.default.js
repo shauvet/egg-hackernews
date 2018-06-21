@@ -23,7 +23,15 @@ module.exports = appInfo => {
   // config.xtpl = {};
 
   // add your config here
-  config.middleware = [];
+  config.middleware = [
+    'robot'
+  ];
+
+  config.robot = {
+    ua: [
+      /Baiduspider/i
+    ]
+  };
 
   return config;
 };

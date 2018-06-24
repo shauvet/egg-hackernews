@@ -4,16 +4,12 @@ const Controller = require('egg').Controller;
 
 class NewsController extends Controller {
   async list() {
-    const ctx = this.ctx;
+    const { ctx, app } = this;
     const page = ctx.query.page || 1;
-    const newsList = await ctx.service.news.list(page);
-    // const dataList = {
-    //   list: [
-    //     { id: 1, title: 'this is news 1', url: '/news/1' },
-    //     { id: 2, title: 'this is news 2', url: '/news/2' }
-    //   ]
-    // };
-    await ctx.render('news/list.tpl', { list: newsList });
+    const pageSize = app.config.news.pageSize;
+    const idList = await ctx.service.news.getTopStories(page);
+    const newsList = await Promise.all(idList.map(id => ctx.service.news.getItem(id)));
+    await ctx.render('news/list.tpl', { list: newsList, page, pageSize });
   }
 }
 
